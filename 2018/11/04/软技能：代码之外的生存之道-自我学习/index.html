@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.4.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="1.自我教育自我教育这个技能还是越早学会越好啊，毕竟越早，能够学会的东西越多啊。其实小时候的我还是对这个世界充满着好奇啊，总是会想要了解自己不懂得东西啊。只是后来爱上了玩游戏啊，就开始研究如何才能将游戏打的更好啊：WAR3（魔兽争霸3），喜欢玩塔防的，那时候也没有什么直播，就是自己天天跟别人玩，看别人怎么玩，然后问啊；CF（穿越火线），就天天练枪，然后有时候看看别人发的视频，关于卡点，跑酷……;L">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/11/04/软技能：代码之外的生存之道-自我学习/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.自我教育自我教育这个技能还是越早学会越好啊，毕竟越早，能够学会的东西越多啊。其实小时候的我还是对这个世界充满着好奇啊，总是会想要了解自己不懂得东西啊。只是后来爱上了玩游戏啊，就开始研究如何才能将游戏打的更好啊：WAR3（魔兽争霸3），喜欢玩塔防的，那时候也没有什么直播，就是自己天天跟别人玩，看别人怎么玩，然后问啊；CF（穿越火线），就天天练枪，然后有时候看看别人发的视频，关于卡点，跑酷……;L">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-04T15:16:21.192Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="1.自我教育自我教育这个技能还是越早学会越好啊，毕竟越早，能够学会的东西越多啊。其实小时候的我还是对这个世界充满着好奇啊，总是会想要了解自己不懂得东西啊。只是后来爱上了玩游戏啊，就开始研究如何才能将游戏打的更好啊：WAR3（魔兽争霸3），喜欢玩塔防的，那时候也没有什么直播，就是自己天天跟别人玩，看别人怎么玩，然后问啊；CF（穿越火线），就天天练枪，然后有时候看看别人发的视频，关于卡点，跑酷……;L">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/11/04/软技能：代码之外的生存之道-自我学习/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title> | Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/04/软技能：代码之外的生存之道-自我学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FreshMint">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-11-04 23:15:44 / Modified: 23:16:21" itemprop="dateCreated datePublished" datetime="2018-11-04T23:15:44+08:00">2018-11-04</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="1-自我教育"><a href="#1-自我教育" class="headerlink" title="1.自我教育"></a>1.自我教育</h1><p>自我教育这个技能还是越早学会越好啊，毕竟越早，能够学会的东西越多啊。<br>其实小时候的我还是对这个世界充满着好奇啊，总是会想要了解自己不懂得东西啊。<br>只是后来爱上了玩游戏啊，就开始研究如何才能将游戏打的更好啊：WAR3（魔兽争霸3），喜欢玩塔防的，那时候也没有什么直播，就是自己天天跟别人玩，看别人怎么玩，然后问啊；CF（穿越火线），就天天练枪，然后有时候看看别人发的视频，关于卡点，跑酷……;LOL（英雄联盟），那时候喜欢玩小鱼人，天天玩，研究英雄的技能，研究与不同英雄的对线的处理，以及抓人的时机….私以为这也是自我教育。</p>
+<h1 id="1-1-十步学习法"><a href="#1-1-十步学习法" class="headerlink" title="1.1.十步学习法"></a>1.1.十步学习法</h1><p>作者自创的一套学习方法，比较复杂。我在这边就说个框架：<br>1.了解全局：简而言之，就是对要学的内容有一个整体性的了解。<br>2.确定范围：简而言之，就是确定自己具体要学哪一块，毕竟人的精力是有限的。<br>3.定义目标：目标就是一个可以量化你已经成功的标志。<br>4.寻找资源：就是查资料呗。网上的，书上的，只要有用的，我全都要！<br>5.筛选资源：将手头上现有的资源进行二次筛选，决定将哪些放进学习计划。<br>6.创建学习计划：就是说基于已有的资源，结合自身的情况，选一条自学之路来。<br>7.开始学习，浅尝辄止：就是先学起来，试着进行操作。遇到问题，再去找具体的文档<br>8.动手操作，边玩边学：感觉上跟低7步差不多的。就是边操作，边犯错，边学习。<br>9.全面掌握，学以致用：就是说这时候你已经很厉害了，不要拘泥于一个模板了，要会变通。<br>10.乐为人师，融会贯通：这时候的你，由于经验丰富，已经有资格去教别人了。教别人的同时，也是一次自省，有助于加深对知识的理解。</p>
+<h1 id="1-2-简化四步学习法"><a href="#1-2-简化四步学习法" class="headerlink" title="1.2.简化四步学习法"></a>1.2.简化四步学习法</h1><p>我将上面的学习法归纳总结成为简单四步：<br>1.确立目标：这个目标是明确的目标。<br>举例：我要用Python编写一个爬虫，这个爬虫能够爬取国家地理的图片。<br>2.寻找资源：寻找过程中可能需要的资源（这一步会在之后反复用到）<br>举例：学习Python：廖雪峰的教学课程，Python从入门到编程的书，教爬虫的莫烦Python，以及各种其他的网络资源。<br>3.制定计划：这一步包括将目标分割成一个个小目标，并且为这些小目标制订具体的计划。<br>举例：先入门Python，然后学会基础的语法，会用了（需要具体的时间周期以及明确的阶段目标）；再学习爬虫，能爬到东西了；最后完成指定的目标，爬取 国家地理的图片。<br>4.具体实施：有了计划之后，就按照计划一步步实施。中间会遇到各种问题，需要重新查资料，然后调整计划，但是整体的大方向是不能变的。<br>举例：在爬虫的时候，需要用到正则，可能会碰到爬取失败（频率太高等原因），都是需要花额外的时间精力去解决这些问题的。</p>
+<h1 id="2-寻找老师"><a href="#2-寻找老师" class="headerlink" title="2.寻找老师"></a>2.寻找老师</h1><p>个人认为，一个好的老师会带你走上一条坦途（某一方面，没有全知全能的人）。就是说，你在学习的时候会少绕很多弯路。因为在很多时候，你可能觉得毫无头绪的问题，有些人一句话就解决了。（我在刚接触xshell的时候，曾一度绝望于在数十台机器一直切换，然后人家告诉我，在最底下的命令行打就是操作所有连接的机子。）<br>个人还觉得，只要能够保持对优秀的渴望，自己当自己的老师是很好的一个选择。毕竟，自己才知道自己最想要的是什么。</p>
+<h1 id="2-1-真实的老师"><a href="#2-1-真实的老师" class="headerlink" title="2.1.真实的老师"></a>2.1.真实的老师</h1><p>就是真实世界中的人，包括同事，朋友，等等在某一方面能教你的人，都可以作为老师。个人建议：平常有问题多问，尤其是那种你已经死磕了半天的问题。很多人都不是因为不会开口，而导致自己比较辛苦。</p>
+<h1 id="2-2-虚拟的老师"><a href="#2-2-虚拟的老师" class="headerlink" title="2.2.虚拟的老师"></a>2.2.虚拟的老师</h1><p>我对书中内容的直观了解：就是自己通过看书，查资料，网上提问题等方式，自己当自己的老师，解决问题。</p>
+<h1 id="2-3-聘请老师"><a href="#2-3-聘请老师" class="headerlink" title="2.3.聘请老师"></a>2.3.聘请老师</h1><p>个人觉得，可以理解为，花钱买网课；花钱参加培训课程等方式。</p>
+<h1 id="3-成为老师"><a href="#3-成为老师" class="headerlink" title="3.成为老师"></a>3.成为老师</h1><p>就像在十步学习法中最后的最后一步：乐为人师，融汇贯通。自己学以致用，和需要将自己学会的东西整理归纳并传授给他人，是很不一样的。后者需要站在学生的角度去重新思考一些问题（比如，在讲爬虫之前，是不是要讲一点正则的知识？）毕竟，对你而言能够简单理解的内容可能在学生看来相当高深。在转变与思考的过程也是对知识的一种升华，沉淀。</p>
+<h1 id="3-1-习惯分享"><a href="#3-1-习惯分享" class="headerlink" title="3.1.习惯分享"></a>3.1.习惯分享</h1><p>就最简单的一种情况，有时候你在跟别人做分享的时候，别人会站在自己的角度给你的方案提建议，有时候是很有效果的（产品经理大概也是这么想的吧），因为这个角度是你的思考盲区（即你压根不知道这个地方还有这种方案可以选，毕竟人的认知是有限的）<br>在你习惯了做分享之后，你的人脉圈子自然而言也会扩展啊。因为分享，所以口口相传，所以越来越多人认识你。尤其是在网络环境，如果有人能够坚持天天分享，只要有一定的内容，长此以往是比较容易积累粉丝的。（天天，谈何容易，佩服唐家三少！）</p>
+<h1 id="3-2-融会贯通"><a href="#3-2-融会贯通" class="headerlink" title="3.2.融会贯通"></a>3.2.融会贯通</h1><p>我觉得该书的翻译人员在这边翻译的很好啊，我决定套用他翻译的原话的一部分：</p>
+<blockquote>
+<p>这就是传道授业的价值。在你的知识集合里面，总有一部分知识你并没有理解透彻到可以向别人解释，而“教”的过程能够迫使你面对这一部分。作为人类，我们的大脑善于模式识别。我们能够识别模式，并且套用这些固定的模式去解决许多问题，而没有做到“知其然”也”知其所以然”<br>这一段还是强烈的推荐大家去看一下原著或者译文（第33章）</p>
+</blockquote>
+<h1 id="4-发现自己的短板"><a href="#4-发现自己的短板" class="headerlink" title="4.发现自己的短板"></a>4.发现自己的短板</h1><p> 这边的短板，就可能是一门语言中某一个特性不太了解，带来的整体的效率低下。这边举个我自己的例子：军哥曾经在看到我在重复一遍又一遍的工作的时候，他说，当你遇到一个问题两次，三次，好多次了。我建议你花点时间想一想如何自动化这个任务。（脚本，人能做的，机器基本都能做到。）<br>文章中举的这个例子我之前也有用过。面试之前，去网上搜集一些面试清单。看哪些是自己会的，哪些是自己不会的。不会的那些就属于你的短板，需要及时弥补。</p>
+<h1 id="4-1-为什么"><a href="#4-1-为什么" class="headerlink" title="4.1.为什么"></a>4.1.为什么</h1><p>原因很简单，就是效率，有时候一些常出现的短板，不及时弥补会导致整体工作效率低下。</p>
+<h1 id="4-2怎么做"><a href="#4-2怎么做" class="headerlink" title="4.2怎么做"></a>4.2怎么做</h1><p>1.列出一份工作清单，看看哪些常用的技能自己还没有掌握或者掌握的不好<br>2.可以问问周边的同事或者朋友啊，当局者迷，旁观者清。</p>
+<h1 id="5-证书相关"><a href="#5-证书相关" class="headerlink" title="5.证书相关"></a>5.证书相关</h1><p>个人觉得证书最有用的是在刚找工作，和需要升职的时候。</p>
+<h1 id="5-1-学历"><a href="#5-1-学历" class="headerlink" title="5.1.学历"></a>5.1.学历</h1><p>国内跟国外的区别还是有的，国外的人在没有工作的情况下直接上大学是比较吃力的（部分父母是不会供应学费的，还是有家庭供应的！！！！）<br>国内的话，好像就是一口气读下来，读到哪里算哪里（我只见过这种情况）。我还是想搞个博士学位的，如果有机会，我成功的读到了，我还在搞我的博客，我会回来补全这一部分的</p>
+<h1 id="5-2-专业证书"><a href="#5-2-专业证书" class="headerlink" title="5.2.专业证书"></a>5.2.专业证书</h1><p>专业的证书是否有用完全看该行业的情况。这里我就不讲了，因为我目前没有考过任何我这个专业相关的证书。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/04/软技能：代码之外的生存之道-自我营销/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">FreshMint</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-自我教育"><span class="nav-number">1.</span> <span class="nav-text">1.自我教育</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-1-十步学习法"><span class="nav-number">2.</span> <span class="nav-text">1.1.十步学习法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-2-简化四步学习法"><span class="nav-number">3.</span> <span class="nav-text">1.2.简化四步学习法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-寻找老师"><span class="nav-number">4.</span> <span class="nav-text">2.寻找老师</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-1-真实的老师"><span class="nav-number">5.</span> <span class="nav-text">2.1.真实的老师</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-2-虚拟的老师"><span class="nav-number">6.</span> <span class="nav-text">2.2.虚拟的老师</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-3-聘请老师"><span class="nav-number">7.</span> <span class="nav-text">2.3.聘请老师</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-成为老师"><span class="nav-number">8.</span> <span class="nav-text">3.成为老师</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-1-习惯分享"><span class="nav-number">9.</span> <span class="nav-text">3.1.习惯分享</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-2-融会贯通"><span class="nav-number">10.</span> <span class="nav-text">3.2.融会贯通</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-发现自己的短板"><span class="nav-number">11.</span> <span class="nav-text">4.发现自己的短板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-1-为什么"><span class="nav-number">12.</span> <span class="nav-text">4.1.为什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-2怎么做"><span class="nav-number">13.</span> <span class="nav-text">4.2怎么做</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-证书相关"><span class="nav-number">14.</span> <span class="nav-text">5.证书相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-1-学历"><span class="nav-number">15.</span> <span class="nav-text">5.1.学历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-2-专业证书"><span class="nav-number">16.</span> <span class="nav-text">5.2.专业证书</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FreshMint</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
